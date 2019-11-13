@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("./GothamPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("./GothamPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.container {
+  max-width: 1150px;
+}
+
+.contact-blue {
+  background-color: #002aff;
+}
+.contact {
+  span {
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number-contact {
+  display: flex;
+  justify-content: space-between;
+  max-width: 490px;
+  width: 100%;
+}
+
+.contact-url {
+  display: flex;
+  justify-content: space-between;
+  max-width: 550px;
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+nav {
+  max-width: 840px;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    li {
+      list-style-type: none;
+      a {
+        font-family: "Gotham Pro";
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        &:hover {
+          padding-bottom: 5px;
+          color: #002aff;
+          text-decoration: none;
+          border-bottom: 4px solid #002aff;
+        }
+      }
+    }
+  }
+}
+
+.dark-ul {
+  a {
+    color: #424242;
+  }
+}
+.white-ul {
+  a {
+    color: white;
+  }
+}
+.pages-change-wrapper {
+  display: flex;
+  justify-content: space-between;
+  div {
+    cursor: pointer;
+    img {
+      margin: 0 10px;
+    }
+    span {
+      color: #424242;
+      font-family: "Gotham Pro";
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.content {
+  padding-top: 40px;
+  background-color: #f9f9f9;
+  h2 {
+    padding-top: 30px;
+    text-align: center;
+    height: 78px;
+    color: #002aff;
+    font-family: "Gotham Pro";
+    font-size: 106px;
+    font-weight: 700;
+    line-height: 105.59px;
+    text-transform: uppercase;
+  }
+  h3 {
+    padding-top: 60px;
+    padding-bottom: 130px;
+    text-align: center;
+    color: #424242;
+    font-family: "Gotham Pro";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+.pic {
+  text-align: center;
+}
+
+footer {
+  background-color: #2c2b28;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1100px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    ul {
+      flex-wrap: wrap;
+      li {
+        width: 30%;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contact-url {
+    flex-wrap: wrap;
+    span {
+      width: 33%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pages-change-wrapper {
+    div {
+      width: 40%;
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        margin: 0;
+        order: 0;
+      }
+      span {
+        order: 1;
+        width: 100%;
+      }
+    }
+  }
+
+  .page-next {
+    justify-content: flex-end;
+    img {
+      align-self: flex-start;
+    }
+    span {
+      margin-top: 0px;
+      order: 1;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .number-contact {
+    flex-wrap: wrap;
+    width: 100%;
+    span {
+      padding-bottom: 10px;
+    }
+  }
+  .contact-url {
+    flex-wrap: wrap;
+    span {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .page-next {
+    span {
+      margin-top: -18px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-url {
+    flex-wrap: wrap;
+    span {
+      padding-bottom: 7px;
+      width: 50%;
+    }
+  }
+  nav {
+    ul {
+      flex-wrap: wrap;
+      li {
+        padding-top: 10px;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page-next {
+    span {
+      margin-top: 0px;
+      margin-left: 2000px;
+    }
+  }
+}
